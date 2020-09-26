@@ -41,9 +41,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Location = new System.Drawing.Point(9, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 17);
+            this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Camera";
             // 
@@ -51,25 +52,28 @@
             // 
             this.cboDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDevice.FormattingEnabled = true;
-            this.cboDevice.Location = new System.Drawing.Point(115, 12);
+            this.cboDevice.Location = new System.Drawing.Point(86, 10);
+            this.cboDevice.Margin = new System.Windows.Forms.Padding(2);
             this.cboDevice.Name = "cboDevice";
-            this.cboDevice.Size = new System.Drawing.Size(250, 24);
+            this.cboDevice.Size = new System.Drawing.Size(188, 21);
             this.cboDevice.TabIndex = 1;
             // 
             // pictureBox
             // 
             this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox.Location = new System.Drawing.Point(12, 54);
+            this.pictureBox.Location = new System.Drawing.Point(9, 44);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(456, 384);
+            this.pictureBox.Size = new System.Drawing.Size(334, 311);
             this.pictureBox.TabIndex = 2;
             this.pictureBox.TabStop = false;
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(474, 54);
+            this.btnStart.Location = new System.Drawing.Point(311, 10);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(2);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.Size = new System.Drawing.Size(56, 30);
             this.btnStart.TabIndex = 3;
             this.btnStart.Text = "&Start";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -77,10 +81,11 @@
             // 
             // txtQRCode
             // 
-            this.txtQRCode.Location = new System.Drawing.Point(474, 108);
+            this.txtQRCode.Location = new System.Drawing.Point(383, 90);
+            this.txtQRCode.Margin = new System.Windows.Forms.Padding(2);
             this.txtQRCode.Multiline = true;
             this.txtQRCode.Name = "txtQRCode";
-            this.txtQRCode.Size = new System.Drawing.Size(271, 188);
+            this.txtQRCode.Size = new System.Drawing.Size(204, 154);
             this.txtQRCode.TabIndex = 4;
             // 
             // timer1
@@ -90,14 +95,15 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 450);
+            this.ClientSize = new System.Drawing.Size(624, 366);
             this.Controls.Add(this.txtQRCode);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.cboDevice);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Qr Code ";

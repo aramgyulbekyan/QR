@@ -34,8 +34,17 @@ namespace QR
         private void btnStart_Click(object sender, EventArgs e)
         {
             captureDevice = new VideoCaptureDevice(filterInfoCollection[cboDevice.SelectedIndex].MonikerString);
-           
+
             captureDevice.NewFrame += captureDevice_NewFrame;
+            captureDevice.VideoResolution = captureDevice.VideoCapabilities[6];
+
+            /*for (int i = 0; i < captureDevice.VideoCapabilities.Length; i++)
+            {
+
+                string resolution = "Resolution Number " + Convert.ToString (i);
+                string resolution_size = captureDevice.VideoCapabilities[i].FrameSize.ToString();
+
+            }*/
             captureDevice.Start();
             timer1.Start();
         }
@@ -66,5 +75,7 @@ namespace QR
                 }
             }
         }
+
+       
     }
 }
